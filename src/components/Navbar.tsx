@@ -13,7 +13,7 @@ function Navbar() {
               key={i}
               className="text-gray-300 hover:text-white transition-colors cursor-pointer text-lg font-semibold"
             >
-              {item}
+              <a href={`#${item.toLowerCase()}`}>{item}</a>
             </li>
           ))}
         </ul>
